@@ -140,8 +140,8 @@ best_f1 = f1_scores[best_idx]
 probs = probs_flat>=best_thresh
 print(probs)
 cm = confusion_matrix(targets_flat, probs)
-f1_score = f1_score(targets_flat, probs)
+f1_calc = f1_score(targets_flat, probs)
 average_precision = average_precision_score(targets_flat, probs_flat)
 print(cm)
-print(f1_score)
+print(f1_calc)
 print(average_precision)
